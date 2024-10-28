@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="vista_filmotecaalvaro_pelicula_tree">
+      <field name="name">vista_filmotecaalvaro_pelicula_tree</field>
+      <field name="model">filmotecaalvaro.pelicula</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="film_date"/>
+          <field name="description"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="filmotecaalvaro.action_window">
+      <field name="name">filmotecaalvaro window</field>
+      <field name="res_model">filmotecaalvaro.filmotecaalvaro</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="filmotecaalvaro.action_server">
+      <field name="name">filmotecaalvaro server</field>
+      <field name="model_id" ref="model_filmotecaalvaro_filmotecaalvaro"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="filmotecaalvaro" id="filmotecaalvaro.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="filmotecaalvaro.menu_1" parent="filmotecaalvaro.menu_root"/>
+    <menuitem name="Menu 2" id="filmotecaalvaro.menu_2" parent="filmotecaalvaro.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="filmotecaalvaro.menu_1_list" parent="filmotecaalvaro.menu_1"
+              action="filmotecaalvaro.action_window"/>
+    <menuitem name="Server to list" id="filmotecaalvaro" parent="filmotecaalvaro.menu_2"
+              action="filmotecaalvaro.action_server"/>
+-->
+  </data>
+</odoo>
