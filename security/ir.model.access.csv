@@ -1,3 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_filmotecaalvaro_pelicula,filmotecaalvaro.pelicula,model_filmotecaalvaro_pelicula,base.group_user,1,1,1,1
 access_filmotecaalvaro_genero,filmotecaalvaro.genero,model_filmotecaalvaro_genero,base.group_user,1,1,1,1
+
